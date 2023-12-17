@@ -1,0 +1,38 @@
+# database configurations
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/spring_reddit_clone
+    username: root
+    password: Ahmed@2252300
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+# mail sender configurations (mailTrap)
+  mail:
+    host: sandbox.smtp.mailtrap.io
+    port: 2525
+    username: 2959fded7d01f6
+    password: 42824902bffe5e
+    protocol: smtp
+
+# JWT configs
+spring_reddit_clone:
+  app:
+    jwtSecret: SpringRedditCloneAhemd2252300HellomanSpringRedditClone
+    jwtExpirationMs: 900000
+
+# Openapi and swagger ui configuration
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /api-docs/swagger-ui-custom.html
+    operations-sorter: method
+
+
